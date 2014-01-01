@@ -1,0 +1,12 @@
+abbreviation	name	equation	reversible	lowbnd	uppbnd	obj_coef
+uptakeN2	uptakeN2	--> N2	Irreversible	0	100	0
+uptakeNH4	uptakeNH4	--> NH4	Irreversible	0	1	0
+uptakeCi	uptakeCi	--> Ci	Irreversible	0	100	0
+uptakeP	uptakeP	--> P	Irreversible	0	100	0
+reduceN2	reduceN2	N2 + (10) NADPH + (10) ATP --> NH4 + (10) NADP + (10) ADP	Irreversible	0	100	0  
+reduceCi	reduceCi	Ci + NADPH + ATP --> 2Oxog + NADP + ADP	Irreversible	0	100	0
+photosynth	photosynth	NADP + ADP --> NADPH + ATP	Irreversible	0	10	0
+outProt	outProt	Prot -->	Irreversible	0	Inf	0
+synthAA	synthAA	NH4 + 2Oxog --> AA	Irreversible	0	100	0
+synthRibo	synthRibo	P --> Ribo	Irreversible	0	100	0
+synthProt	synthProt	AA + Ribo --> Prot + Ribo	Irreversible	0	100	1
