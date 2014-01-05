@@ -1,0 +1,25 @@
+
+This code performs a simulation of phytoplankton growth in a chemostat, where tendency terms (growth and uptake) are calculated using a flux balance analysis.
+
+main.r sets parameters, initial conditions, and calls the odes for the growth of a single phytoplankton population in a chemostat. The odes are specified in equations.r 
+
+equations.r calls an fba to get growth and uptake terms, as a function of nutrient concentration state values. 
+
+callfba.r is used to call the fba in each time step
+
+the initial fba is specified in microbe_react.tsv, and maximum uptake rates are updated as a (Michaelis-Menton) function of external nutrient concentrations
+
+paramspacefba.r implements the same fba, but in a static context, with supplied vectors of external nutrient concentrations... this is useful for exploring how growth, uptake, N fixation respond to different conditions...
+
+Dependencies
+packages deSolve, sybil, lpSolveAPI
+
+
+photosynthesis and carbon fixation are not properly parameterized in microbe_react.tsv... look up electron gain from light reactions, electron cost of fixing Ci by dark reactions...
+
+
+
+
+ 
+
+
